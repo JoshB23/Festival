@@ -5,8 +5,6 @@ using UnityEngine.AI;
 
 public class WeepingAngel : MonoBehaviour
 {
-    private FPSController playerController;
-    private PlayerStats playerHealth;
     private Transform playerObject;
 
     public float speed = 5;
@@ -15,7 +13,7 @@ public class WeepingAngel : MonoBehaviour
 
     public float damage = 100;
 
-    public float attackDistance;
+    public float attackDistance = 5;
     public float startRange = 70;
 
     public NavMeshAgent agent;
@@ -25,9 +23,7 @@ public class WeepingAngel : MonoBehaviour
 
     private void Awake()
     {
-        playerController = GetComponent<FPSController>();
         playerObject = GameObject.FindGameObjectWithTag("Player").transform;
-        playerHealth = GetComponent<PlayerStats>();
 
     }
 
@@ -49,7 +45,7 @@ public class WeepingAngel : MonoBehaviour
 
         if (Vector3.Distance(transform.position, playerObject.position) <= attackDistance)
         {
-            playerHealth.ApplyDamage(100);
+            FPSController.OnTakeDamage(100);
 
         }
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1906427385978125322}
   - component: {fileID: 6908130941841987204}
   - component: {fileID: 2253488071642742200}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tall_Grass_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6711734596178399781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tall_Grass_1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 7829775480059285292}
   - component: {fileID: 5439671115142732160}
   - component: {fileID: 948880738562549782}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tall_Grass_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,9 +210,10 @@ GameObject:
   - component: {fileID: 1973994361468477054}
   - component: {fileID: 2804922514074992285}
   - component: {fileID: 7706251085074348422}
-  m_Layer: 0
+  - component: {fileID: 4499540058481170899}
+  m_Layer: 3
   m_Name: PRE_Tall_Grass_1
-  m_TagString: Untagged
+  m_TagString: Footsteps/Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -309,3 +310,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4499540058481170899
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4586943048183364725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6663159934874561455, guid: 18a9a2e0ab4504d49a7be14c7a4384f0, type: 3}

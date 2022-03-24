@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class EnemyTriggerZone : MonoBehaviour
 {
-    public AudioSource alert;
     public GameObject player;
     public bool inTriggerZone;
 
-    private void Start()
-    {
-        alert = GetComponent<AudioSource>();
-    }
-
+   
     private void OnTriggerEnter(Collider other)
     {
         if (player)
         {
-                alert.Play(0);
+                
                 inTriggerZone = true;
         }
     }
@@ -26,7 +21,7 @@ public class EnemyTriggerZone : MonoBehaviour
     {
         if (player)
         {
-            alert.Pause();
+            
             inTriggerZone = false;
         }
     }

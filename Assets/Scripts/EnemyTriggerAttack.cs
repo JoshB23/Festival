@@ -5,19 +5,24 @@ using UnityEngine.AI;
 
 public class EnemyTriggerAttack : MonoBehaviour
 {
-    public EnemyTriggerZone enemyTriggerZone;
+    public TouchingGrass touchingGrass;
     public Transform player;
     int MoveSpeed = 4;
     public NavMeshAgent agent;
 
-    void Start()
+    public float attackDistance = 5;
+    private Transform playerObject;
+
+
+    private void Awake()
     {
-       
+        playerObject = GameObject.FindGameObjectWithTag("Player").transform;
+
     }
 
     void Update()
     {
-        if (enemyTriggerZone.inTriggerZone)
+        if (touchingGrass.isTouchingGrass)
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
             agent.SetDestination(player.position);
@@ -25,6 +30,12 @@ public class EnemyTriggerAttack : MonoBehaviour
         else
         {
             agent.SetDestination(agent.transform.position);
+        }
+
+        if (Vector3.Distance(transform.position, playerObject.position) <= attackDistance)
+        {
+            FPSController.OnTakeDamage(100);
+
         }
     }
 }
