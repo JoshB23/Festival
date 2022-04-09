@@ -1,0 +1,20 @@
+# This file uses centimeters as units for non-parametric coordinates.
+
+mtllib Wire_Fence.mtl
+g default
+v -12.366449 -0.165996 0.246869
+v -0.002031 -0.004075 -0.012353
+v -12.397218 2.108157 0.199770
+v -0.032800 2.270078 -0.059451
+vt 0.000499 0.000488
+vt 0.999512 0.000547
+vt 0.000488 0.184234
+vt 0.999501 0.184293
+vn 0.020681 0.020981 0.999566
+vn 0.020681 0.020981 0.999566
+vn 0.020681 0.020981 0.999566
+vn 0.020681 0.020981 0.999566
+s off
+g Wire_Fence
+usemtl initialShadingGroup
+f 1/1/1 2/2/2 4/4/3 3/3/4
