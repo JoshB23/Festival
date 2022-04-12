@@ -29,7 +29,7 @@ public class SwampEnemy : MonoBehaviour
         }
         else
         {
-            agent.SetDestination(agent.transform.position);
+            agent.Warp(agent.transform.position);
         }
 
         if (Vector3.Distance(transform.position, playerObject.position) <= attackDistance)
