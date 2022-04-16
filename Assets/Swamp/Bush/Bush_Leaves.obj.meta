@@ -3,7 +3,12 @@ guid: 1c1ecc88db663c84a8f78d2ec28547c5
 ModelImporter:
   serializedVersion: 22102
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bush_LeavesMat
+    second: {fileID: 2100000, guid: 3a0a21193bc50f24f9e66f463b7775b8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

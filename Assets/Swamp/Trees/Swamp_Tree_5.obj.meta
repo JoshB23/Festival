@@ -3,7 +3,12 @@ guid: 46e828cd0516e054b8233fac7cdbeae1
 ModelImporter:
   serializedVersion: 22102
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Swamp_Tree_With_LeavesMat
+    second: {fileID: 2100000, guid: 10a9dc64b4a7cac4584e4e643671437d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
