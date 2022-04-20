@@ -637,7 +637,23 @@ PlayerSettings:
   webGLMemoryLinearGrowthStep: 16
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    CloudRendering: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    EmbeddedLinux: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    GameCoreScarlett: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    GameCoreXboxOne: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    Lumin: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    Nintendo Switch: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    PS4: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    PS5: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    QNX: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    Stadia: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    Standalone: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    WebGL: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    Windows Store Apps: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    XboxOne: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
+    tvOS: ENVIRO_LW;ENVIRO_HD;ENVIRO_HDRP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
