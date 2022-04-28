@@ -28,10 +28,10 @@ MonoBehaviour:
     edgeDarkness: 0.99
     baseErosionIntensity: 0
     detailErosionIntensity: 0
-    density: 2.51
+    density: 4
     lightStepModifier: 0.5
     lightVariance: 0.5
-    coverage: -1
+    coverage: 1
     lightAbsorbtion: 0.4
     coverageType: 1
     raymarchingScale: 1
@@ -44,7 +44,7 @@ MonoBehaviour:
     flatCloudsDirectLightIntensity: 15
     flatCloudsAmbientLightIntensity: 1
     flatCloudsHGPhase: 0.9
-    flatCoverage: 0
+    flatCoverage: 2
     particleLayer1Alpha: 0.173
     particleLayer1Brightness: 0.75
     particleLayer1ColorPow: 2
@@ -55,8 +55,8 @@ MonoBehaviour:
   fogStartDistance: 0
   fogDistance: 10
   fogDensity: 0.001
-  fogAttenuationDistance: 10
-  fogRelativeFogHeight: 50
+  fogAttenuationDistance: 52
+  fogRelativeFogHeight: 61
   weatherSkyMod:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   volumeLightIntensity: 1
   shadowIntensityMod: 0
-  heightFogDensity: 1
+  heightFogDensity: 0.74
   SkyFogHeight: 0.001
   skyFogStart: 0
   SkyFogIntensity: 0.851
@@ -170,9 +170,9 @@ MonoBehaviour:
   AutumnNightAmbient: {fileID: 8300000, guid: 421815712ee5317449eeef6d06fac4a3, type: 3}
   WinterDayAmbient: {fileID: 0}
   WinterNightAmbient: {fileID: 0}
-  blurDistance: 32
-  blurIntensity: 0.772
-  blurSkyIntensity: 0
+  blurDistance: 0
+  blurIntensity: 0
+  blurSkyIntensity: 0.1
   sceneExposureMod: 1
   skyExposureMod: 1
   lightIntensityMod: 1
