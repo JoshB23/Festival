@@ -3,7 +3,12 @@ guid: 765346e8b430e564b9b74e53457cf9ff
 ModelImporter:
   serializedVersion: 22102
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PoleMat
+    second: {fileID: 2100000, guid: 773ca40ca1579fd4b825316e6c25aec5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
