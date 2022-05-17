@@ -50,6 +50,7 @@ public class FPSController : MonoBehaviour
     public static Action<float> OnTakeDamage;
     public static Action<float> OnDamage;
     public static Action<float> OnHeal;
+    public GameOverScreen gameOverScreen;
 
     [Header("Stamina Parameters")]
     [SerializeField] private float maxStamina = 100;
@@ -380,8 +381,10 @@ public class FPSController : MonoBehaviour
         if (regeneratingHealth != null)
             StopCoroutine(regeneratingHealth);
 
-        print("DEAD!");
-
+        
+        gameOverScreen.Setup();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void ApplyFinalMovements()

@@ -13,6 +13,9 @@ public class EnemyTriggerAttack : MonoBehaviour
     public float attackDistance = 5;
     private Transform playerObject;
 
+    public Transform[] waypoints;
+    int waypointIndex;
+    Vector3 target;
 
     private void Awake()
     {
@@ -29,13 +32,28 @@ public class EnemyTriggerAttack : MonoBehaviour
         }
         else
         {
-            agent.SetDestination(agent.transform.position);
+            target = waypoints[waypointIndex].position;
+            agent.SetDestination(target);
+
+            if (Vector3.Distance(transform.position, target) < 1)
+            {
+                IterateWaypointIndex();
+            }
         }
 
         if (Vector3.Distance(transform.position, playerObject.position) <= attackDistance)
         {
             FPSController.OnTakeDamage(100);
 
+        }
+    }
+
+    void IterateWaypointIndex()
+    {
+        waypointIndex++;
+        if (waypointIndex == waypoints.Length)
+        {
+            waypointIndex = 0;
         }
     }
 }
